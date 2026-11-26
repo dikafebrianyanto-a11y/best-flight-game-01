@@ -1,0 +1,42 @@
+/* style.css — page chrome for Senja Flight. The game itself is canvas. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #17102a;
+  color: #ffe9a8;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  gap: 10px;
+}
+
+#game {
+  width: min(1280px, 100%);
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 233, 168, 0.18);
+  background: #2b1d52;
+  cursor: crosshair;
+}
+
+.hint {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.hint.dim {
+  color: rgba(255, 233, 168, 0.55);
+  font-size: 12px;
+}
